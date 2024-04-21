@@ -13,11 +13,11 @@ export default function Home() {
 
   const videoRefMobile = useRef();
   const videoRefDesktop = useRef();
-
+  let window;
   const [activeDay, setActiveDay] = useState(0);
   const [activeVideo, setActiveVideo] = useState();
   const [activePhoto, setActivePhoto] = useState('https://world-wide-trekking.s3.us-west-1.amazonaws.com/section-8+images/Screenshot+2024-03-10+225323+copy+copy+copy+copy+copy.jpg');
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(window?.innerWidth);
   const [activeFaq, setActiveFaq] = useState(null);
 
   function changeDayHandler(e, index) {
@@ -48,12 +48,12 @@ export default function Home() {
   }
 
   function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
+    setWidth(window?.innerWidth);
   }
   useEffect(() => {
-    window.addEventListener('resize', handleWindowSizeChange);
+    window?.addEventListener('resize', handleWindowSizeChange);
     return () => {
-      window.removeEventListener('resize', handleWindowSizeChange);
+      window?.removeEventListener('resize', handleWindowSizeChange);
     }
   }, []);
 
@@ -218,7 +218,7 @@ export default function Home() {
               <p>Guests Success Rate</p>
             </div>
             <div className="col-3">
-              <h5><span id="accolade4Mobile"></span>'s</h5>
+              <h5><span id="accolade4Mobile"></span>s</h5>
               <p>Summits Incl. Evererest</p>
             </div>
           </div>
@@ -241,7 +241,7 @@ export default function Home() {
             <p>Guests Success Rate</p>
           </div>
           <div className="col-2">
-            <h3><span id="accolade4"></span>'s</h3>
+            <h3><span id="accolade4"></span>s</h3>
             <p>Summits Incl. Everest</p>
           </div>
         </div>
@@ -320,7 +320,7 @@ export default function Home() {
               <h1 className="headline">Talk About <span style={{ color: "#C62034" }}>Why</span> You Want to<span
                 style={{ color: "#C62034" }}> Climb Kilimanjaro</span></h1>
               <p className="sub-head">Dean knows everone has a reason and expectation for their climb, and
-                he'd
+                hed
                 like you to share yours with him, so he can focus on making your experience
                 unforgettable.
               </p>
