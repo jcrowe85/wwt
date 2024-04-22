@@ -8,6 +8,7 @@ import { motion, stagger } from "framer-motion"
 import Slideshow from "@/components/slide-show";
 import { IoMdCheckmark } from "react-icons/io";
 import React, { useState, useRef, useEffect } from 'react';
+import Link from "next/link";
 
 export default function Home() {
 
@@ -15,7 +16,7 @@ export default function Home() {
   const videoRefDesktop = useRef();
   let window;
   const [activeDay, setActiveDay] = useState(0);
-  const [activeVideo, setActiveVideo] = useState();
+  const [activeVideo, setActiveVideo] = useState('https://world-wide-trekking.s3.us-west-1.amazonaws.com/Lodging+Clip.mp4');
   const [activePhoto, setActivePhoto] = useState('https://world-wide-trekking.s3.us-west-1.amazonaws.com/section-8+images/Screenshot+2024-03-10+225323+copy+copy+copy+copy+copy.jpg');
   const [width, setWidth] = useState(window?.innerWidth);
   const [activeFaq, setActiveFaq] = useState(null);
@@ -99,10 +100,12 @@ export default function Home() {
             transition={{ ease: "anticipate", duration: 1 }}
             className="cta-and-arrow">
             <div className="cta">
-              <button className="red">
-                SCHEDULE ZOOM MEETING
-                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" />
-              </button>
+              <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+                <button className="red">
+                  SCHEDULE WITH DEAN
+                  <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+                </button>
+              </Link>
             </div>
             <div className="cta-arrow">
               <img src="./imgs/cta-arrow-desktop.png" alt="" />
@@ -163,10 +166,12 @@ export default function Home() {
               </p>
               <div className="cta-and-arrow">
                 <div className="cta">
-                  <button className="red">
-                    SCHEDULE ZOOM MEETING
-                    <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" />
-                  </button>
+                  <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+                    <button className="red">
+                      SCHEDULE WITH DEAN
+                      <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+                    </button>
+                  </Link>
                 </div>
                 <div className="cta-arrow">
                   <img src="./imgs/cta-arrow-desktop.png" alt="" />
@@ -206,19 +211,19 @@ export default function Home() {
         <div className="container">
           <div className="row highlights">
             <div className="col-3">
-              <h5><span id="accolade1Mobile"></span>+</h5>
+              <h5><span id="accolade1Mobile"></span>85+</h5>
               <p>Kilimanjaro Summits</p>
             </div>
             <div className="col-3">
-              <h5><span id="accolade2Mobile"></span> Yrs.</h5>
+              <h5><span id="accolade2Mobile"></span>25 Yrs.</h5>
               <p>Intl. Adventure Guide</p>
             </div>
             <div className="col-3">
-              <h5><span id="accolade3Mobile"></span>%</h5>
+              <h5><span id="accolade3Mobile"></span>97%</h5>
               <p>Guests Success Rate</p>
             </div>
             <div className="col-3">
-              <h5><span id="accolade4Mobile"></span>s</h5>
+              <h5><span id="accolade4Mobile"></span>100s</h5>
               <p>Summits Incl. Evererest</p>
             </div>
           </div>
@@ -229,19 +234,19 @@ export default function Home() {
         <div className="row highlights justify-content-center">
           <h3 className="col-4">A Free 45 Minute Session with a World className Guide</h3>
           <div className="col-2">
-            <h3><span id="accolade1"></span>+</h3>
+            <h3><span id="accolade1"></span>85+</h3>
             <p>Kilimanjaro Summits</p>
           </div>
           <div className="col-2">
-            <h3><span id="accolade2"></span>Years</h3>
+            <h3><span id="accolade2"></span>25 Years</h3>
             <p>Intl. Adventure Guide</p>
           </div>
           <div className="col-2">
-            <h3><span id="accolade3"></span>%</h3>
+            <h3><span id="accolade3"></span>97%</h3>
             <p>Guests Success Rate</p>
           </div>
           <div className="col-2">
-            <h3><span id="accolade4"></span>s</h3>
+            <h3><span id="accolade4"></span>100s</h3>
             <p>Summits Incl. Everest</p>
           </div>
         </div>
@@ -284,10 +289,12 @@ export default function Home() {
           to share yours with
           him, so he can focus on making your experience unforgettable.</p>
         <div className="cta">
-          <button className="red">
-            SCHEDULE WITH DEAN
-            <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
-          </button>
+          <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+            <button className="red">
+              SCHEDULE WITH DEAN
+              <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+            </button>
+          </Link>
         </div>
       </section >
       {/* section 2 - desktop */}
@@ -325,10 +332,12 @@ export default function Home() {
                 unforgettable.
               </p>
               <div className="cta">
-                <button className="red">
-                  SCHEDULE WITH DEAN
-                  <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
-                </button>
+                <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+                  <button className="red" style={{width: "100%"}}>
+                    SCHEDULE WITH DEAN
+                    <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+                  </button>
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -403,10 +412,12 @@ export default function Home() {
           </li>
         </ul>
         <div className="cta">
-          <button className="red">
-            SCHEDULE WITH DEAN
-            <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
-          </button>
+          <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+            <button className="red">
+              SCHEDULE WITH DEAN
+              <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+            </button>
+          </Link>
         </div>
       </section >
       {/* section 3 - desktop  */}
@@ -440,10 +451,12 @@ export default function Home() {
                 picture including costs, equipment, health, timeline, and so forth.
               </p>
               <div className="cta">
-                <button className="red">
-                  SCHEDULE WITH DEAN
-                  <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
-                </button>
+                <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+                  <button className="red">
+                    SCHEDULE WITH DEAN
+                    <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+                  </button>
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -1348,10 +1361,12 @@ export default function Home() {
           </div>
         </motion.div>
         <div className="cta">
-          <button className="red">
-            SCHEDULE WITH DEAN
-            <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
-          </button>
+          <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+            <button className="red">
+              SCHEDULE WITH DEAN
+              <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+            </button>
+          </Link>
         </div>
       </section >
       {/* section-5 - desktop */}
@@ -1464,10 +1479,12 @@ export default function Home() {
                 </div>
               </motion.div>
               <div className="cta">
-                <button className="red">
-                  SCHEDULE WITH DEAN
-                  <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
-                </button>
+                <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+                  <button className="red">
+                    SCHEDULE WITH DEAN
+                    <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+                  </button>
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -1625,10 +1642,12 @@ export default function Home() {
                 successfully made the summit more than 85 times.
               </p>
               <div className="cta">
-                <button className="white">
-                  SCHEDULE WITH DEAN
-                  <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
-                </button>
+                <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+                  <button className="white">
+                    SCHEDULE WITH DEAN
+                    <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+                  </button>
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -1771,7 +1790,7 @@ export default function Home() {
               <div>
                 <h6>Jayson Terdiman</h6>
                 <p>2023-10-02</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </motion.div>
@@ -1795,7 +1814,7 @@ export default function Home() {
               <div>
                 <h6>Rod Newman</h6>
                 <p>2023-09-24</p>
-                <img src="./imgs/5-stars.png" alt="/" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="/" />
               </div>
             </div>
           </motion.div>
@@ -1820,7 +1839,7 @@ export default function Home() {
               <div>
                 <h6>Patrice Reilly</h6>
                 <p>2023-09-21</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </motion.div>
@@ -1845,7 +1864,7 @@ export default function Home() {
               <div>
                 <h6>Cindy McConnell</h6>
                 <p>2023-08-31</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </motion.div>
@@ -1869,7 +1888,7 @@ export default function Home() {
               <div>
                 <h6>LeeAnn Lewis</h6>
                 <p>2023-07-26</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </motion.div>
@@ -1892,7 +1911,7 @@ export default function Home() {
               <div>
                 <h6>Jason Scaglione</h6>
                 <p>2023-07-25</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </motion.div>
@@ -1914,7 +1933,7 @@ export default function Home() {
               <div>
                 <h6>Ed Davies</h6>
                 <p>2023-09-20</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </motion.div>
@@ -1941,7 +1960,7 @@ export default function Home() {
               <div>
                 <h6>Xerife Kimura</h6>
                 <p>2023-10-31</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </motion.div>
@@ -1965,11 +1984,13 @@ export default function Home() {
               <p>The World Wide Trekking Difference</p>
             </div>
             <h1 className="headline">What Our Guest <br></br>Have to Say About Us</h1>
-            <div className="cta" style={{ zIndex: "999" }}>
-              <button className="red">
-                SCHEDULE WITH DEAN
-                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
-              </button>
+            <div className="cta" style={{ zIndex: "999"}}>
+              <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true} style={{textAlign: "center", display: "flex", justifyContent: "center"}}>
+                <button className="red">
+                  SCHEDULE WITH DEAN
+                  <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+                </button>
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -1995,7 +2016,7 @@ export default function Home() {
               <div>
                 <h6>Jayson Terdiman</h6>
                 <p>2023-10-02</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </div>
@@ -2010,7 +2031,7 @@ export default function Home() {
               <div>
                 <h6>Rod Newman</h6>
                 <p>2023-09-24</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </div>
@@ -2026,7 +2047,7 @@ export default function Home() {
               <div>
                 <h6>Patrice Reilly</h6>
                 <p>2023-09-21</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </div>
@@ -2042,7 +2063,7 @@ export default function Home() {
               <div>
                 <h6>Cindy McConnell</h6>
                 <p>2023-08-31</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </div>
@@ -2057,7 +2078,7 @@ export default function Home() {
               <div>
                 <h6>LeeAnn Lewis</h6>
                 <p>2023-07-26</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </div>
@@ -2071,7 +2092,7 @@ export default function Home() {
               <div>
                 <h6>Jason Scaglione</h6>
                 <p>2023-07-25</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </div>
@@ -2084,7 +2105,7 @@ export default function Home() {
               <div>
                 <h6>Ed Davies</h6>
                 <p>2023-09-20</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </div>
@@ -2102,7 +2123,7 @@ export default function Home() {
               <div>
                 <h6>Xerife Kimura</h6>
                 <p>2023-10-31</p>
-                <img src="./imgs/5-stars.png" alt="" />
+                <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/5-stars.png" alt="" />
               </div>
             </div>
           </div>
@@ -2203,10 +2224,12 @@ export default function Home() {
           Be apart of something bigger - book your call with Dean today!
         </p >
         <div className="cta">
-          <button className="white">
-            SCHEDULE WITH DEAN
-            <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
-          </button>
+          <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+            <button className="white">
+              SCHEDULE WITH DEAN
+              <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+            </button>
+          </Link>
         </div>
       </section >
       {/*section - 8 - desktop */}
@@ -2308,10 +2331,12 @@ export default function Home() {
                 Be apart of something bigger - book your call with Dean today!
               </p >
               <div className="cta">
-                <button className="white">
-                  SCHEDULE WITH DEAN
-                  <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
-                </button>
+                <Link href="https://tidycal.com/m5gp483/30-minute-meeting-1we54x0" passHref={true}>
+                  <button className="white">
+                    SCHEDULE WITH DEAN
+                    <img src="https://world-wide-trekking.s3.us-west-1.amazonaws.com/icons/zoom-icon-white-mobile.png" alt="" width="25px" />
+                  </button>
+                </Link>
               </div>
             </motion.div>
           </div>
